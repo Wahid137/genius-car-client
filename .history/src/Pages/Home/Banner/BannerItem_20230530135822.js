@@ -1,0 +1,28 @@
+import React from 'react';
+import './BannerItem.css'
+
+const BannerItem = ({ slide }) => {
+    const { image, prev, id, next } = slide;
+    return (
+
+        <div id={`slide${id}`} className="carousel-item relative w-full">
+            <div className='carousel-img'>
+                <img src={image} alt="slide" className="w-full" />
+            </div>
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 before: top-3/4">
+                <h1 className='text-6xl font-bold text-white'>
+                    Affordable <br />
+                    Price for Car <br />
+                    Servicing
+                </h1>
+            </div>
+            <div className="absolute flex justify-between transform -translate-y-1/2 right-5 before: top-3/4">
+                <a href={`#slide${prev}`} className="btn btn-circle me-5">❮</a>
+                <a href={`#slide${next}`} className="btn btn-circle">❯</a>
+            </div>
+        </div>
+
+    );
+};
+
+export default BannerItem;
