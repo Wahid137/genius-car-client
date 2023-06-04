@@ -3,7 +3,7 @@ import { FaCalendarDay, FaLocationArrow, FaPhoneAlt } from 'react-icons/fa';
 
 const Contact = () => {
     return (
-        <div className="card my-20 p-8 bg-black text-white rounded-lg">
+        <div className="card my-14 p-8 bg-black text-white rounded-lg">
             <div className="card-body">
                 <div className="flex flex-col gap-y-5  md:flex-row justify-around">
                     <div className='flex items-center'>
