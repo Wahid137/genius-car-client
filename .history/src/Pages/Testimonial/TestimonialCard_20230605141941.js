@@ -16,8 +16,8 @@ const TestimonialCard = ({ customerInformation }) => {
                 </div>
                 <img className="w-14 h-14" src={quotation} alt="" />
             </div>
-            <div className="mt-5">
-                <p className='font-semibold mb-2'>{quote}</p>
+            <div className="">
+                <p className=''>{quote}</p>
                 <Star stars={rating}></Star>
             </div>
         </div>

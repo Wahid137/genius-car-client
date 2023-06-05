@@ -18,7 +18,7 @@ const TestimonialCard = ({ customerInformation }) => {
             </div>
             <div className="mt-5">
                 <p className='font-semibold mb-2'>{quote}</p>
-                <Star stars={rating}></Star>
+                <Star className="justify-start flex" stars={rating}></Star>
             </div>
         </div>
     );

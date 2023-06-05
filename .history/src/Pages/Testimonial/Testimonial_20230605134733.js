@@ -1,4 +1,5 @@
 import React from 'react';
+import icon from '../../assets/icons/quote.svg';
 import TestimonialCard from './TestimonialCard';
 
 const Testimonial = () => {
@@ -9,7 +10,7 @@ const Testimonial = () => {
             "job": "Businessman",
             "quote": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
             "img": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80",
-            "rating": 5
+            "icon": icon
         },
         {
             "customer_id": "02",
@@ -17,7 +18,7 @@ const Testimonial = () => {
             "job": "Businessman",
             "quote": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
             "img": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80",
-            "rating": 5
+            "icon": icon
         }
     ]
     return (
@@ -29,9 +30,9 @@ const Testimonial = () => {
             </div>
             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
                 {
-                    customersInformation.map(customerInformation => <TestimonialCard
-                        key={customerInformation.customer_id}
-                        customerInformation={customerInformation}
+                    customersInformation.map(feature => <TestimonialCard
+                        key={feature.feature_id}
+                        feature={feature}
                     ></TestimonialCard>)
                 }
             </div>
