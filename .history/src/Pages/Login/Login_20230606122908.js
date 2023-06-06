@@ -1,11 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import img from '../../assets/images/login/login.svg'
 
 const Login = () => {
-    const handleLogin = () => {
-
-    }
     return (
         <div className="hero w-full">
             <div className="hero-content grid gap-20 md:grid-cols-2 flex-col lg:flex-row">
@@ -34,8 +29,8 @@ const Login = () => {
                         </div>
                     </form>
                     <p className='text-center'>New to Genius Car <Link className="text-orange-600 font-bold" to="/signup">Sign Up</Link></p>
-                    {/* {success && <p className='text-center text-green-600 '>Successfully login to the account</p>} */}
-
+                    {success && <p className='text-center text-green-600 '>Successfully login to the account</p>}
+                    <SocialLogin></SocialLogin>
                 </div>
             </div>
         </div>

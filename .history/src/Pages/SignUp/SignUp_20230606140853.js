@@ -17,7 +17,6 @@ const SignUp = () => {
         createUser(email, password)
             .then(result => {
                 const user = result.user;
-                console.log(user)
                 setSuccess(true);
                 form.reset()
             })
@@ -58,8 +57,8 @@ const SignUp = () => {
                             <input className="btn btn-primary" type="submit" value="sign up" />
                         </div>
                     </form>
-                    <p className='text-red-600 text-center'>{passwordError}</p>
-                    {success && <p className="text-green-600 text-center">User Created Successfully</p>}
+                    {/*  <p className='text-red-600 text-center'>{passwordError}</p>
+                    {success && <p className="text-green-600 text-center">User Created Successfully</p>} */}
                     <p className='text-center'>Already have an account? <Link className="text-orange-600 font-bold" to="/login">Login</Link></p>
                 </div>
             </div>
