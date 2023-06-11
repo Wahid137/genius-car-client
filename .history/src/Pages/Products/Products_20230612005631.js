@@ -1,52 +1,47 @@
 import ProductCard from './ProductCard';
-import product1 from '../../assets/images/products/1.png'
-import product2 from '../../assets/images/products/2.png'
-import product3 from '../../assets/images/products/3.png'
-import product4 from '../../assets/images/products/4.png'
-import product5 from '../../assets/images/products/5.png'
-import product6 from '../../assets/images/products/6.png'
+import 
 
 const Products = () => {
     const products = [
         {
             "product_id": "04",
             "title": "Car Engine Plug",
-            "img": product1,
+            "img": "https://i.ibb.co/R0d8kW8/1.png",
             "price": "20.00",
             "rating": 4
         },
         {
             "product_id": "05",
             "title": "Cools Led Light",
-            "img": product2,
+            "img": "https://i.ibb.co/cDj1dx8/2.png",
             "price": "20.00",
             "rating": 5
         },
         {
             "product_id": "01",
             "title": "Cools Led Light",
-            "img": product3,
+            "img": "https://i.ibb.co/LvdY2yB/3.png",
             "price": "20.00",
             "rating": 3
         },
         {
             "product_id": "02",
             "title": "Cools Led Light",
-            "img": product4,
+            "img": "https://i.ibb.co/txXt5M3/4.png",
             "price": "20.00",
             "rating": 5
         },
         {
             "product_id": "03",
             "title": "Car Air Filter",
-            "img": product5,
+            "img": "https://i.ibb.co/CBFnhqn/5.png",
             "price": "30.00",
             "rating": 3.5
         },
         {
             "product_id": "06",
             "title": "Cols Led Light",
-            "img": product6,
+            "img": "https://i.ibb.co/sC7RWGG/6.png",
             "price": "20.00",
             "rating": 5
         }

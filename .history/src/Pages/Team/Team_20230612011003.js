@@ -1,26 +1,24 @@
+import React, { useEffect, useState } from 'react';
 import TeamCard from './TeamCard';
-import member1 from '../../assets/images/team/1.jpg';
-import member2 from '../../assets/images/team/2.jpg';
-import member3 from '../../assets/images/team/3.jpg';
 
 const Team = () => {
     const teamMembers = [
         {
             "member_id": "01",
             "title": "Car Engine Plug",
-            "img": member1,
+            "img": "https://i.ibb.co/rFk8WGC/2.jpg",
             "skill": "Engine Expert"
         },
         {
             "member_id": "02",
             "title": "Car Engine Plug",
-            "img": member2,
+            "img": "https://i.ibb.co/60fZxKd/3.jpg",
             "skill": "Engine Expert"
         },
         {
             "member_id": "03",
             "title": "Car Engine Plug",
-            "img": member3,
+            "img": "https://i.ibb.co/k0yLr4Z/1.jpg",
             "skill": "Engine Expert"
         }
 

@@ -18,14 +18,14 @@ const Products = () => {
         {
             "product_id": "05",
             "title": "Cools Led Light",
-            "img": product2,
+            "img": product1,
             "price": "20.00",
             "rating": 5
         },
         {
             "product_id": "01",
             "title": "Cools Led Light",
-            "img": product3,
+            "img": product2,
             "price": "20.00",
             "rating": 3
         },
